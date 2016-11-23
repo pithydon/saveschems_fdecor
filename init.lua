@@ -51,6 +51,39 @@ mts_save("broccoli", {
 	}
 })
 
+mts_save("mapgen_broccoli", {
+	size = {x = 3, y = 7, z = 3},
+	data = {
+		_,_,_,
+		_,_,_,
+		_,_,_,
+		_,_,_,
+		H,F,H,
+		F,F,F,
+		L,F,L,
+
+		_,S,_,
+		_,S,_,
+		_,S,_,
+		_,S,_,
+		F,S,F,
+		F,S,F,
+		F,F,F,
+
+		_,_,_,
+		_,_,_,
+		_,_,_,
+		_,_,_,
+		H,F,H,
+		F,F,F,
+		L,F,L,
+	},
+	yslice_prob = {
+		{ypos = 1, prob = 127},
+		{ypos = 2, prob = 63}
+	}
+})
+
 local S = {name = "fdecor:cauliflower_stalk", prob = 255, force_place = true}
 local F = {name = "fdecor:cauliflower_flower", prob = 255, force_place = false}
 local H = {name = "fdecor:cauliflower_flower", prob = 127, force_place = false}
